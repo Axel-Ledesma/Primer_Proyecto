@@ -1,3 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/Fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#inicio .presentacion h1 {
+font-size: 55px;
+margin-bottom: 25px;
+    text-align: center;
+}
+#inicio.presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+#inicio .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .7s;
+}
+#inicio .presentacion a:hover {
+    background-color: #ffda73;
+}
 .presentacion {
     max-width: 1100px;
     height: 100vh;
@@ -6,15 +48,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: rgb(239, 239, 178);
 }
-
 .bienvenida {
-    font-size: 18px;
+    font-size: 38px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+.nombre {
+    color: #2afac3;
+    font-size: 25px;
+}
 
-span {
-    color: #f0b9c7;
+
+
+/* SECCION SKILLS */
+
+#skill{
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+
+}
+
+#skills .contenedor-skills .titulo-skills {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#skills .contenedor-skills .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
 }
