@@ -6,6 +6,15 @@
 html {
     scroll-behavior: smooth;
 }
+.ir_arriba{
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    position: fixed;
+    font-size: 35px;
+    color: #ffda73;
+    z-index: 1;
+}
 #inicio {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/Fondo.jpg");
     background-size: cover;
