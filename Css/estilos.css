@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -12,8 +13,29 @@ html {
     text-decoration: none;
     position: fixed;
     font-size: 35px;
-    color: #ffda73;
+    color: #ffffff;
     z-index: 1;
+}
+.ir_arriba:hover{
+    color: #ffe6bc;
+    transition: .3s;
+}
+#inicio .navbar-toggler:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .3s;
+}
+#inicio .navbar{
+    position: absolute;
+}
+#inicio .navbar i{
+    margin-right: 10px;
+}
+#inicio .navbar-brand{
+    margin: 0px 30px;
+}
+#inicio .navbar-brand:hover{
+    transition: .3s;
+    color: #ffe6bc;
 }
 #inicio {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/Fondo.jpg");
@@ -22,8 +44,8 @@ html {
     height: 100vh;
 }
 #inicio .presentacion h1 {
-font-size: 55px;
-margin-bottom: 25px;
+    font-size: 45px;
+    margin-bottom: 25px;
     text-align: center;
 }
 #inicio.presentacion .descripcion {
@@ -37,15 +59,15 @@ margin-bottom: 25px;
     display: inline-block;
     margin: 25px;
     padding: 20px 25px;
-    border: 2px solid #ffda73;
-    border-radius: 45%;
-    color: #ffda73;
+    border: 2px solid #ffe6bc;
+    border-radius: 50%;
+    color: #ffffff;
     font-weight: bold;
-    text-transform: uppercase;
-    transition: .7s;
+    transition: .3s;
 }
 #inicio .presentacion a:hover {
-    background-color: #ffda73;
+    background-color: #ffe6bc;
+    color: #1e1e1e;
 }
 .presentacion {
     max-width: 1100px;
@@ -55,17 +77,21 @@ margin-bottom: 25px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgb(239, 239, 178);
+    color: #ffffff;
+}
+.presentacion .descripcion{
+    max-width: 500px;
+    font-size: 20px;
+    text-align: center;
 }
 .bienvenida {
     font-size: 38px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 .nombre {
-    color: #2afac3;
-    font-size: 25px;
+    color: #ffe6bc;
 }
 
 
@@ -73,17 +99,14 @@ margin-bottom: 25px;
 /* SECCION SKILLS */
 
 #skills{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(229, 228, 228, 0.5));
+    overflow: hidden;
+    background-color: #111111;
     padding: 100px 15px;
     text-align: center;
 }
 #skills .titulo-skills{
     font-size: 40px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #3e3e3e;
-    text-decoration-thickness: 5px;
+    color: #ffffff;
     margin-top: -60px;
 }
 .logo-skills {
@@ -97,37 +120,38 @@ margin-bottom: 25px;
     margin: 30px auto;
 }
 #skills .fila .skills{
-    max-width: 200px;
-    background-color: rgb(155, 147, 147);
-    padding: 30px;
-    margin: 0 5px;
-    border-radius: 5px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
     transition: .5s;
+    width: 300px;
+    padding: 30px;
+    margin: 0px 5px;
 }
 #skills .fila .skills:hover{
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+    box-shadow: 2px 2px 5px #565656, -2px -2px 5px #8a8a8a;
 }
-#skills .fila .skills .nombre-skill{
-    font: 22px;
+#skills .fila .skills .nombre-skills{
+    font-size: 22px;
     margin-bottom: 25px;
-
+    color: #ffffff;
+    padding-top: 30px;
 }
 
 
 /* SECCION PROYECTOS */
 #proyectos{
-    background: linear-gradient(rgba(229, 228, 228, 0.5), rgba(0, 0, 0, 0.5));
+    background-color: #111111;
     padding: 100px 0;
     margin: auto;
 }
 #proyectos .titulo-proyectos {
     text-align: center;
     font-size: 40px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #3e3e3e;
-    text-decoration-thickness: 5px;
+    color: #ffffff;
     margin-top: -60px;
 }
 #proyectos .fila{
@@ -142,6 +166,7 @@ margin-bottom: 25px;
     margin: 0 10px;
     position: relative;
     overflow: hidden;
+    border-radius: 32px;
 }
 #proyectos .fila .proyecto img{
     width: 100%;
@@ -157,7 +182,7 @@ margin-bottom: 25px;
     position: absolute;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #ff5080;
+    color: #ffe6bc;
     width: 100%;
     padding: 10px;
     opacity: 0;
@@ -171,18 +196,14 @@ margin-bottom: 25px;
 
 /** C O N T A C T O **/
 #contacto {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 1, 1, 1));
+    background-color: #111111;
     padding: 100px 15px;
 }
 #contacto .titulo-seccion {
     margin-bottom: 20px;
     text-align: center;
-    font-size: 2px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
+    font-size: 40px;
+    color: #ffffff;
 }
 #contacto .contenedor-form {
     max-width: 1100px;
@@ -218,14 +239,14 @@ margin-bottom: 25px;
     font-size: 18px;
 }
 #contacto .btn-enviar:hover {
-    background-color: #ff5080;
-    color: #fff;
+    background-color: #ffe6bc;
+    color: #111111;
 }
 
 /** FOOTER **/
 footer {
-    background-color: rgba(1, 1, 1, 1);
-    color: #fff;
+    background-color: #111111;
+    color: #ffffff;
     text-align: center;
     padding: 30px 0;
 }
@@ -233,5 +254,6 @@ footer a {
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    margin: 5px;
+    margin: 20px;
+    font-size: 30px;
 }
