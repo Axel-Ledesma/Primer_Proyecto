@@ -1,3 +1,3 @@
 # Axel-Ledesma.github.io
 
-Pagina web sobre mi
+Mi propio portafolio WEB creado con HTML, CSS, Bootstrap y Javascript, el proyecto sigue en constante desarrollo.
